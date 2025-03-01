@@ -137,7 +137,7 @@ nav {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: var(--pfp-col);
+    background-color: #333;
     color: white;
     margin-top: 20px;
 }
