@@ -145,6 +145,10 @@ nav {
     -webkit-user-drag: none;
 }
 
+.carousel-item {
+    cursor: grab;
+}
+
 /* Footer */
 footer {
     text-align: center;
