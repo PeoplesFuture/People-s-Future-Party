@@ -69,10 +69,11 @@ nav {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 54px;
         right: 0;
         background: white;
         width: 200px;
+        height: calc(100vh - 54px);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
