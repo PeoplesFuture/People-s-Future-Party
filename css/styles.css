@@ -74,9 +74,21 @@ nav {
         right: 0;
         background: white;
         width: 200px;
-        height: calc(100vh - 54px);
+        height: 0;
+        overflow: hidden;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        /* Animation */
+        opacity: 0;
+        transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
+
+    /* แสดงเมนู */
+    .menu.show {
+        height: calc(100vh - 54px);
+        opacity: 1;
+    }
+
 
     .menu li {
         margin: 0;
