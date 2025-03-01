@@ -39,7 +39,27 @@
 
     <!-- Main Slider -->
     <section class="container">
-      <img src="img/slider/test1.png" class="picture-banner">
+        <img id="banner" class="picture-banner" src="/img/slider/test1.png" alt="Banner" style="opacity: 1;">
+
+        <script>
+            const images = [
+                "/img/slider/test1.png",
+                "/img/slider/test2.png",
+                "/img/slider/test3.png"
+            ];
+    
+            let index = 0;
+            const banner = document.getElementById("banner");
+    
+            setInterval(() => {
+                banner.style.opacity = 0; // จางหายไป
+                setTimeout(() => {
+                    index = (index + 1) % images.length; // เปลี่ยนภาพ
+                    banner.src = images[index];
+                    banner.style.opacity = 1; // ค่อยๆ โผล่มา
+                }, 1000); // รอให้เอฟเฟกต์จางหายก่อนเปลี่ยนภาพ
+            }, 5000);
+        </script>
     </section>
 
 
