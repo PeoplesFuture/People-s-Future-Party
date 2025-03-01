@@ -137,3 +137,17 @@ footer {
     width: 100%;
     transition: opacity .75s ease-in-out;
 }
+
+
+.gradient-text {
+    background: #6200ff;
+    background: linear-gradient(90deg, #6200ff, #ff005b 50%, #6200ff);
+    background-size: 200% auto;
+    animation: shine 1slinear infinite;
+}
+
+@keyframes shine{
+    100% {
+    background-position: 200%;
+}
+}
