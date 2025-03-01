@@ -67,7 +67,6 @@ nav {
 /* Responsive สำหรับมือถือ */
 @media (max-width: 768px) {
     .menu {
-        display: none;
         flex-direction: column;
         position: absolute;
         top: 54px;
