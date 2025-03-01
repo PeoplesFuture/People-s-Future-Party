@@ -58,6 +58,7 @@
                     banner.style.opacity = 1; // ค่อยๆ โผล่มา
                 }, 1000); // รอให้เอฟเฟกต์จางหายก่อนเปลี่ยนภาพ
             }, 5000);
+            
         </script>
     </section>
 
@@ -66,5 +67,21 @@
     <footer>
         <p>&copy; 2025 Peoples Future Party. สงวนลิขสิทธิ์</p>
     </footer>
+        <script>
+            window.addEventListener('resize', function() {
+                var section = document.getElementById('add-class-1');
+                if (window.innerWidth > 1080) {
+                    section.classList.add('container');
+                } else {
+                    section.classList.remove('container');
+                }
+            });
+            
+            // เรียกใช้ในตอนโหลดหน้า
+            if (window.innerWidth > 1080) {
+                document.getElementById('add-class-1').classList.add('container');
+            }
+
+        </script>
 </body>
 </html>
