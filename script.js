@@ -8,7 +8,7 @@ function toggleMenu() {
         hamburger.textContent = "☰"; // เปลี่ยนเป็น ☰
     } else {
         menu.classList.add("show");
-        hamburger.textContent = "X"; // เปลี่ยนเป็น X
+        hamburger.textContent = "✖"; // เปลี่ยนเป็น ✖
     }
 }
 
