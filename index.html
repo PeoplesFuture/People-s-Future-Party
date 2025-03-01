@@ -78,6 +78,25 @@
     <footer>
         <p>&copy; 2025 Peoples Future Party. สงวนลิขสิทธิ์</p>
     </footer>
-
+    <script>
+            $(document).ready(function() {
+                var carousel = $("#mainSlider");
+    
+                // รองรับการลาก (Mouse Drag)
+                var startX, endX;
+                carousel.on("mousedown touchstart", function(e) {
+                    startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+                });
+    
+                carousel.on("mouseup touchend", function(e) {
+                    endX = e.type === "touchend" ? e.changedTouches[0].clientX : e.clientX;
+                    if (startX - endX > 50) {
+                        carousel.carousel("next");
+                    } else if (endX - startX > 50) {
+                        carousel.carousel("prev");
+                    }
+                });
+            });
+        </script>
 </body>
 </html>
