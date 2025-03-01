@@ -58,7 +58,7 @@ nav {
 }
 
 .menu li {
-    
+    cursor: pointer;
 }
 
 .menu a {
