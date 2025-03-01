@@ -1,3 +1,7 @@
+:root {
+    --pfp-col: #ff6200;
+}
+
 /* ตั้งค่าพื้นฐาน */
 body {
     font-family: 'Anakotmai', sans-serif;
@@ -38,6 +42,7 @@ header {
 
 .logo a {
     font-size: 22px;
+    color: var(--pfp-col);
 }
 
 nav {
@@ -58,7 +63,7 @@ nav {
 
 .menu a {
     text-decoration: none;
-    color: #ff6200;
+    color: var(--pfp-col);
     padding: 10px 15px;
     transition: opacity .5s ease;
 }
@@ -132,7 +137,7 @@ nav {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #333;
+    background-color: var(--pfp-col);
     color: white;
     margin-top: 20px;
 }
