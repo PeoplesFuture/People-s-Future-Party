@@ -60,6 +60,11 @@ nav {
     text-decoration: none;
     color: #ff6200;
     padding: 10px 15px;
+    transition: opacity 1sease;
+}
+
+.menu a:hover {
+    opacity: 0.5;
 }
 
 /* Hamburger Menu (ซ่อนตอนจอใหญ่) */
