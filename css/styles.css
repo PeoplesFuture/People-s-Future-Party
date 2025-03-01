@@ -116,38 +116,6 @@ nav {
     }
 }
 
-/* Slider */
-.slider {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.slide {
-  display: none;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  transition: opacity 1s ease-in-out;
-}
-
-.fade {
-  display: block;
-}
-
-.fade img {
-  width: 100%;
-  height: auto;
-}
-
-#mainSlider img {
-    border-radius: 10px;
-    -webkit-user-drag: none;
-}
-
-.carousel-item {
-    cursor: grab;
-}
 
 /* Footer */
 footer {
@@ -162,4 +130,9 @@ footer {
     width: 100%;
     -webkit-user-drag: none;
     user-select: none;
+}
+
+#banner {
+    width: 100%;
+    transition: opacity .75sease-in-out;
 }
