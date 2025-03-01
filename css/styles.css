@@ -157,3 +157,9 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+.picture-banner{
+    width: 100%;
+    -webkit-user-drag: none;
+    user-select: none;
+}
