@@ -37,8 +37,8 @@ nav {
 
 .menu a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #ff6200;
+    padding: 10px 15px;
 }
 
 /* Hamburger Menu (ซ่อนตอนจอใหญ่) */
