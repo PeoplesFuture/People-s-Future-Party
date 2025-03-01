@@ -1,7 +1,16 @@
 // Toggle menu สำหรับมือถือ
+
 function toggleMenu() {
     let menu = document.querySelector(".menu");
-    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+    let hamburger = document.querySelector(".hamburger");
+
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+        hamburger.textContent = "☰"; // เปลี่ยนกลับเป็น ☰
+    } else {
+        menu.style.display = "flex";
+        hamburger.textContent = "X"; // เปลี่ยนเป็น X
+    }
 }
 
 // Main Slider
