@@ -1,0 +1,116 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: 'Anakotmai', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 30px;
+    margin-right: 10px;
+}
+
+.logo a {
+    font-size: 22px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff6200;
+    padding: 10px 15px;
+}
+
+/* Hamburger Menu (ซ่อนตอนจอใหญ่) */
+.hamburger {
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    user-select: none;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 54px;
+        right: 0;
+        background: white;
+        width: 200px;
+        height: calc(100vh - 54px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
