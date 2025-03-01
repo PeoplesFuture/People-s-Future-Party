@@ -61,6 +61,7 @@ nav {
     font-size: 22px;
     cursor: pointer;
     display: none;
+    user-select: none;
 }
 
 /* Responsive สำหรับมือถือ */
