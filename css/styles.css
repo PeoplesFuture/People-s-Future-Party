@@ -118,20 +118,28 @@ nav {
 
 /* Slider */
 .slider {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .slide {
-    display: none;
+  display: none;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
 }
 
-.slide img {
-    width: 100%;
+.fade {
+  display: block;
 }
+
+.fade img {
+  width: 100%;
+  height: auto;
+}
+
 
 /* Footer */
 footer {
